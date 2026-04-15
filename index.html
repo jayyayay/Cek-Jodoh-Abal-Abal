@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Aplikasi Cek Jodoh Abal-Abal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1> Aplikasi Cek Jodoh Abal-Abal </h1>
+
+    <form id="form-jodoh">
+      <h2>Data Kamu</h2>
+      <input type="text" id="nama1" placeholder="Nama Kamu" required>
+      <input type="number" id="tgl1" placeholder="Tanggal Lahir Kamu" min="1" max="31" required>
+      <input type="number" id="bln1" placeholder="Bulan Lahir Kamu (1-12)" min="1" max="12" required>
+
+      <h2>Data Pasangan</h2>
+      <input type="text" id="nama2" placeholder="Nama Pasangan" required>
+      <input type="number" id="tgl2" placeholder="Tanggal Lahir Pasangan" min="1" max="31" required>
+      <input type="number" id="bln2" placeholder="Bulan Lahir Pasangan (1-12)" min="1" max="12" required>
+
+      <button type="submit">Cek Jodoh</button>
+    </form>
+
+    <section class="hasil">
+      <h2>💌 Hasil</h2>
+      <div id="output">Belum ada hasil.</div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
